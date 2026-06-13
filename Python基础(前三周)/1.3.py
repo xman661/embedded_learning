@@ -2,7 +2,7 @@
 score1=int(input('输入成绩：'))
 if score1>=95:
     print('优秀')
-elif score1>=95:
+elif score1>=75:
     print('一般')
 elif score1>=60:
     print('菜逼')
