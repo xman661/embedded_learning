@@ -31,8 +31,8 @@ url = "https://api.github.com/users/octocat"
 response = requests.get(url,verify=False)
 if response.status_code == 200:
     data = response.json()
-    print(f'用户名：{data["login"]}')
-    print(f'仓库数：{data['public_repos']}')
+    print(f"用户名：{data['login']}")
+    print(f"仓库数：{data['public_repos']}")
     print(f"粉丝数：{data['followers']}")
 else:
     print(f'请求失败，状态码：{response.status_code}')
